@@ -23,10 +23,10 @@ const Tab1: React.FC = () => {
         </IonToolbar>
          </IonHeader>
 
-      <IonContent fullscreen>
+      <IonContent fullscreen color="light">
      
 
-      <IonToolbar>
+      <IonToolbar color="light">
         <IonSearchbar ></IonSearchbar>
 
         <IonButton icon-only item-right  color="light"  onClick={() => setShowActionSheet(true)} slot="end" >
@@ -57,10 +57,11 @@ const Tab1: React.FC = () => {
           }
         }]}
       >
+
       </IonActionSheet>
       </IonToolbar>
 
-            <IonItem>
+            <IonItem className="emergency">
             <IonIcon icon={medkit}  color="danger" />
             <IonCardHeader>
               <IonCardTitle>Emergency</IonCardTitle>
@@ -75,7 +76,7 @@ const Tab1: React.FC = () => {
         <IonSlides >
 
       <IonSlide >
-      <IonCard>
+      <IonCard >
 
         <IonItem >
         <IonThumbnail slot="start">
